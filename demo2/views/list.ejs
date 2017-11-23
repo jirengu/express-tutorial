@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>list</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <body>
+    <h1>List</h1>
+    <% notes.forEach(function(note){%>
+      <div>
+        <h1><a href="/note/detail/<%= note.id %>"><%= note.title%></a></h1>
+        <p><%= note.content%></p>
+    <% })%>
+  </body>
+</html>
